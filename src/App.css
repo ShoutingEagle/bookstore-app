@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar, .icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+    justify-content: space-around;
+    height: 85px;
+    background-color: #292828;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon{
+    gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.primary{
+    font-size: 30px;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondary{
+    color: white;
+    font-weight: 100;
+}
+
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input, button{
+    height: 32px;
+    width: 300px;
+}
+
+input{
+
+    background-color:#373737 ;
+    color: #7F7F7F;
+    padding-left:5px ;
+    border:none ;
+    outline: none;
+}
+
+button{
+    width: fit-content;
+    padding: 0 10px 0 10px;
+    background-color: transparent;
+    border: 1px solid #949393;
+    color: #949393;
+    cursor: pointer;
+}
+
+.icons-right{
+    display: flex;
+    gap: 5px;
+    align-items: end;
+
+}
+
+.icon-image-right{
+    cursor: pointer;
 }
