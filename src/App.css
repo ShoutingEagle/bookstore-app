@@ -5,6 +5,7 @@
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #242020;
 }
 
 .navbar, .icon{
@@ -21,6 +22,15 @@
 
 .icon{
     gap: 10px;
+
+}
+
+.image,.icon-text-container,.icon,.primary,.secondary{
+    background-color: transparent;
+}
+
+.image img{
+    background-color: #292828;
 }
 
 .primary{
@@ -69,9 +79,108 @@ button{
     display: flex;
     gap: 5px;
     align-items: end;
-
+    background-color: transparent;
 }
 
 .icon-image-right{
     cursor: pointer;
+    background-color: transparent;
+}
+
+.home{
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.thumbnail img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.rendered-image{
+    cursor: pointer;
+}
+
+.renderBook{
+    max-width: 1200px;
+    height: 400px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.book-details{
+    width: 200px;
+    height: 300px;
+}
+
+
+.details-container{
+    height: 300px;
+    background-color: #415F71;
+    border-radius: 0 20px 20px 0;
+}
+
+.title-desc-container{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    background-color: transparent;
+    text-align:justify;
+    overflow-y: scroll;
+}
+
+.title-desc-container::-webkit-scrollbar{
+    display: none;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.button-container button {
+    width:  150px;
+    height: 50px;
+    font-size: 18px;
+    border-color:white ;
+    color: white;
+    margin: 5px;
+}
+
+.title{
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.description{
+    background-color: transparent;
+}
+
+.text{
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    background-color: #415F71;
+    color: white;
 }
